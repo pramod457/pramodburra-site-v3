@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Pramod Burra — Technical Lead · AI Engineer</title>
+    <meta name="description" content="Pramod Burra — Technical Lead and AI Engineer with 11+ years building production LLM applications, conversational AI, LLM evaluation and integration platforms." />
+    <meta name="theme-color" content="#03040a" />
+    <meta property="og:title" content="Pramod Burra — Technical Lead · AI Engineer" />
+    <meta property="og:description" content="A terminal that controls a universe of a million particles. Conversational AI, LLM evaluation, integration platforms." />
+    <meta property="og:url" content="https://pramodburra.com/" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"Person","name":"Pramod Burra","jobTitle":"Technical Lead · AI Engineer","url":"https://pramodburra.com","sameAs":["https://github.com/pramod457","https://linkedin.com/in/pramodburra"]}
+    </script>
+  </head>
+  <body>
+    <canvas id="world" aria-hidden="true"></canvas>
+    <div class="fallback-bg" aria-hidden="true"></div>
+
+    <header class="menubar">
+      <div class="left">
+        <span class="logo" aria-hidden="true">◆</span>
+        <b>pramodburra.com</b>
+        <nav aria-label="Sections">
+          <button data-cmd="about">about</button>
+          <button data-cmd="projects">projects</button>
+          <button data-cmd="experience">experience</button>
+          <button data-cmd="skills">skills</button>
+          <button data-cmd="contact">contact</button>
+        </nav>
+      </div>
+      <div class="right">
+        <span id="status">booting…</span>
+        <span id="clock"></span>
+      </div>
+    </header>
+
+    <main class="win" id="term" aria-label="Terminal">
+      <div class="titlebar">
+        <span class="lights">
+          <button class="close" aria-label="Close terminal"></button>
+          <button class="min" aria-label="Minimise terminal"></button>
+          <button class="max" aria-label="Maximise terminal"></button>
+        </span>
+        <span class="title">pramod@pramodburra.com: ~</span>
+      </div>
+      <div class="out" id="out" role="log" aria-live="polite"></div>
+      <label class="inputline">
+        <span class="prompt">pramod@pb <span class="tilde">~</span> ❯</span>
+        <input id="in" autocomplete="off" spellcheck="false" autocapitalize="off" enterkeyhint="go" aria-label="Type a command" />
+      </label>
+      <div class="quick">
+        <button data-cmd="help">help</button>
+        <button data-cmd="about">about</button>
+        <button data-cmd="projects">projects</button>
+        <button data-cmd="experience">experience</button>
+        <button data-cmd="contact">contact</button>
+        <button data-cmd="resume">resume.pdf</button>
+        <button data-cmd="shape knot">shape knot</button>
+        <button data-cmd="neofetch">neofetch</button>
+      </div>
+    </main>
+
+    <button class="dock" id="dock" hidden>❯_ terminal</button>
+
+    <noscript>
+      <p class="noscript">Pramod Burra — Technical Lead · AI Engineer. 11+ years building conversational AI, LLM evaluation and integration platforms. pramodburra@outlook.com · github.com/pramod457 · linkedin.com/in/pramodburra</p>
+    </noscript>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

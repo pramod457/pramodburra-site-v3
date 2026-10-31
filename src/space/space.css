@@ -1,0 +1,20 @@
+/* 3D embedding layer: hover label and the caption that says what the cloud is. */
+.node-label {
+  position: fixed; left: 0; top: 0; z-index: 40; pointer-events: none;
+  margin: -34px 0 0 14px; padding: 5px 9px 6px; max-width: 260px;
+  font: 500 12px/1.35 'JetBrains Mono', ui-monospace, monospace; color: #14162a;
+  background: rgba(244, 240, 232, 0.94); border: 1px solid rgba(20, 22, 42, 0.16); border-radius: 6px;
+  box-shadow: 0 6px 18px -10px rgba(20, 22, 42, 0.45);
+  opacity: 0; transition: opacity 0.15s;
+}
+.node-label.on { opacity: 1; }
+.node-label .k { display: block; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: #d4462c; margin-bottom: 2px; }
+
+.space-caption {
+  position: fixed; right: 24px; bottom: 20px; z-index: 30; margin: 0; max-width: 430px; text-align: right;
+  font: 400 11.5px/1.5 'JetBrains Mono', ui-monospace, monospace; color: rgba(20, 22, 42, 0.62);
+  opacity: calc(var(--cloud, 0) * 1); pointer-events: none;
+}
+.space-caption b { color: #d4462c; font-weight: 500; }
+.space-caption code { font: inherit; color: #14162a; }
+@media (max-width: 720px) { .space-caption { right: 16px; left: 16px; bottom: 12px; font-size: 10.5px; } }

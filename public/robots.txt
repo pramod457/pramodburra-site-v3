@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pramodburra.com/sitemap.xml

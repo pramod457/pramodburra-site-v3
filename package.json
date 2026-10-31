@@ -1,0 +1,21 @@
+{
+  "name": "pramodburra.com",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host"
+  },
+  "devDependencies": {
+    "@types/three": "^0.170.0",
+    "@webgpu/types": "^0.1.74",
+    "typescript": "^7.0.2",
+    "umap-js": "^1.4.0",
+    "vite": "^8.3.5"
+  },
+  "dependencies": {
+    "three": "^0.170.0"
+  }
+}
